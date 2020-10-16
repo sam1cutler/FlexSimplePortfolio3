@@ -1,0 +1,190 @@
+
+/*--- main body styles ---*/
+header, footer {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: gainsboro;
+  background-color: rgb(47, 64, 79);
+}
+
+h1 {
+  font-size: 66px;
+  margin-bottom: 0px;
+}
+
+header nav {
+  display: flex;
+  font-size: 22px;
+  margin: 0px;
+  padding-top: 0px;
+  justify-content: center;
+}
+
+header nav p a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: gainsboro;
+}
+
+header nav p:last-child a {
+  margin-right: 0px;
+}
+
+main {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(47, 64, 79);
+  background-color: gainsboro;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+
+main p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.item p {
+  text-align: left;
+  font-size: 18px;
+}
+
+ol, ul {
+  text-align: left;
+  font-size: 18px;
+}
+
+.stronger-list-item {
+  font-size: 20px;
+  font-style: bold;
+  text-decoration: underline;
+}
+
+.spaced-list-item {
+  margin: 10px;
+  font-size: 24px;
+}
+
+/* keep text-containing elements in the middle of the web page */
+.pageContainer {
+  margin: 0px;
+  padding: 20px 10%;
+}
+
+/* don't want any top/bottom margin between the header/main/footer transitions */
+.majorSections {
+  margin: 0;
+}
+
+hr {
+  background-color: rgb(47, 64, 79);
+  height: 2px;
+  border: 1px solid rgb(47, 64, 79);
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.small-img {
+  margin: 10px;
+  width: 100%;
+}
+
+.small-img-alt {
+  margin: 10px;
+  width: 80%;
+  /*object-fit: cover;*/
+}
+
+
+.img-caption {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/*--- defining pseudo-classes ---*/ 
+main a:link    { color: blue;}
+main a:visited { color: mediumslateblue;}
+main a:hover   { color: cornflowerblue;}
+main a:active  { color: deepskyblue;}
+header nav a:active {color: rgb(184, 183, 183);}
+
+/*--- formatting forms ---*/
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form textarea {
+  height: 8rem;
+}
+
+form button {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 0px solid rgb(47, 64, 79);
+    font-size: 18px;
+    color: gainsboro;
+    background: rgb(47, 64, 79);
+    margin: 0 0 20px 10px;
+}
+
+
+/* Groups & Items  (Mobile First/"Default") */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  header {
+    /* want to "flex" the header so "child" elements (that's the header and the <nav> containing the 4x<p> buttons) are in a row on a desktop */
+    display: flex;
+    /* want to push the two child elements to opposite ends of the container */
+    justify-content: space-between;
+    /* pad the bottom only? */
+    padding: 0 30px;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 56px;
+    margin: 0;
+    padding: 30px;
+  }
+
+  header nav {
+    padding-right: 50px;
+  }
+
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header nav a:hover { 
+    color: rgb(184, 183, 183);
+  }
+}
