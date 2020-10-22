@@ -18,6 +18,7 @@ header nav {
   margin: 0px;
   padding-top: 0px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 header nav p a {
