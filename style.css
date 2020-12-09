@@ -69,6 +69,10 @@ ol, ul {
   font-size: 24px;
 }
 
+.project-item h3 {
+  text-align: center;
+}
+
 /* keep text-containing elements in the middle of the web page */
 .pageContainer {
   margin: 0px;

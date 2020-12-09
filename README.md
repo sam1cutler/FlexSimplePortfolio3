@@ -1,7 +1,7 @@
-# FlexSimplePortfolio3
+# Portfolio
 
 ## General Description
-This is the third version of my personal portfolio page, following [my first](https://sam1cutler.github.io/SimpleWebPortfolio/) and [second](https://sam1cutler.github.io/FlexSimplePortfolio2/) portfolios. This version incorporates responsive navigation and a contact submission form. The .io version of this page can be found [here](https://sam1cutler.github.io/FlexSimplePortfolio3/).
+This page contains a summary of my professional background and programming abilities. This is the third version of my personal portfolio page, following [my first](https://sam1cutler.github.io/SimpleWebPortfolio/) and [second](https://sam1cutler.github.io/FlexSimplePortfolio2/) versions. This version incorporates responsive navigation and a contact submission form. The GitHub Pages-hosted version of this page can be found [here](https://sam1cutler.github.io/Portfolio/).
 
 ## Contact me
 You can find [my GitHub page here](https://github.com/sam1cutler).
