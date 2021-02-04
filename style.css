@@ -8,13 +8,13 @@ header, footer {
 }
 
 h1 {
-  font-size: 66px;
+  font-size: 36px;
   margin-bottom: 0px;
 }
 
 header nav {
   display: flex;
-  font-size: 22px;
+  font-size: 16px;
   margin: 0px;
   padding-top: 0px;
   justify-content: center;
@@ -40,7 +40,7 @@ main {
 main h2 {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 main p {
@@ -73,15 +73,19 @@ ol, ul {
   text-align: center;
 }
 
-/* keep text-containing elements in the middle of the web page */
 .pageContainer {
   margin: 0px;
   padding: 20px 10%;
 }
 
-/* don't want any top/bottom margin between the header/main/footer transitions */
 .majorSections {
   margin: 0;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 hr {
@@ -107,16 +111,19 @@ img {
 .small-img-alt {
   margin: 10px;
   width: 80%;
-  /*object-fit: cover;*/
 }
-
 
 .img-caption {
   text-align: center;
   margin-top: 0px;
 }
 
-/*--- defining pseudo-classes ---*/ 
+.portrait-container {
+  max-width: 500px;
+}
+
+/*--- defining pseudo-classes ---*/
+main a { text-decoration: none;}
 main a:link    { color: blue;}
 main a:visited { color: mediumslateblue;}
 main a:hover   { color: cornflowerblue;}
@@ -187,6 +194,10 @@ form button {
 
   .group {
     flex-direction: row;
+  }
+
+  .intro-box {
+    padding: 0 0px;
   }
 
   header nav a:hover { 
