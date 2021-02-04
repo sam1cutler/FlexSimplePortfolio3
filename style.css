@@ -101,6 +101,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgb(47, 64, 79);
 }
 
 .small-img {
@@ -121,6 +123,12 @@ img {
 .portrait-container {
   max-width: 500px;
 }
+
+.app-screenshot-container {
+  margin: 20px;
+}
+
+
 
 /*--- defining pseudo-classes ---*/
 main a { text-decoration: none;}
@@ -165,6 +173,23 @@ form button {
   margin: 10px;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  max-width: 900px;
+  background-color: rgba(78, 107, 133, 0.137);
+  border: 1px solid rgb(47, 64, 79);
+  border-radius: 6px;
+}
+
+.project-item li {
+  margin: 10px;
+}
+
 /* Groups & Items  (Desktop) */
 
 @media all and (min-width: 800px) {
@@ -203,4 +228,14 @@ form button {
   header nav a:hover { 
     color: rgb(184, 183, 183);
   }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .app-screenshot-container {
+    margin: 0 50px 30px 50px;
+    padding: 0 50px;
+  }
+
 }
