@@ -7,9 +7,6 @@
 body {
   font-family: 'Lexend', sans-serif;
   font-size: 16px;
-  /*
-  text-rendering: optimizeSpeed;
-  */
 }
 
 .emphasized {
@@ -62,16 +59,19 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  color: red;
 }
 
 .nav-contact-link {
+  color: red;
   font-size: 2rem;
   margin: 5%;
-  transition: font-size 500ms linear;
+  
 }
 
 .nav-contact-link:hover {
   font-size: 2.4rem;
+  transition: font-size 500ms ease-out;
 }
 
 .contact-links-list {
@@ -175,7 +175,7 @@ section p {
   display: flex;
   flex-direction: row;
   max-width: 1000px;
-  padding: 5% 7%;
+  padding: 5% 2%;
 }
 
 .portrait-container {
@@ -184,6 +184,7 @@ section p {
   align-items: center;
   justify-content: center;
   flex: 3;
+  
 }
 
 .about-content {
@@ -193,11 +194,12 @@ section p {
   margin: 3%;
 }
 
-img {
-  width: 100%;
-  border: solid 1px rgb(68, 68, 68);
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgb(46, 46, 46);
+.portrait {
+  width: 80%;
+  border: solid 1px rgb(18, 104, 184);
+  border-radius: 80%;
+  box-shadow: 0 0 10px rgb(18, 104, 184);
+  
 }
 
 .about-section p {
@@ -226,15 +228,18 @@ img {
   align-items: center;
   text-align: center;
   margin: 3%;
-  padding: 3%;
-  background-color: rgb(201, 201, 201);
-  border-radius: 6px;
-  box-shadow: 0 0 8px grey;
+  padding: 0 3%;
+  
 }
 
 .project-container {
   display: flex;
   flex-direction: column;
+  margin: 0 4% 4% 4%;
+  padding: 0 0 3% 0;
+  background-color: rgb(201, 201, 201);
+  border-radius: 6px;
+  box-shadow: 0 0 8px grey;
 }
 
 .project-screenshot-container {
@@ -242,9 +247,17 @@ img {
   padding: 0 50px;
 }
 
+.project-screenshot {
+  width: 80%;
+  border: solid 1px rgb(68, 68, 68);
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgb(68, 68, 68);
+}
+
 .project-tech-list {
   list-style: none;
-  margin: 2%;
+  margin: 0;
+  padding: 0 5%;
 }
 
 .project-tech-list li {
@@ -277,7 +290,7 @@ img {
   background-color: rgb(56, 56, 56);
   border-radius: 6px;
   box-shadow: 0 0 8px rgb(83, 83, 83);
-  transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow, color;
   transition-duration: 400ms;
   transition-timing-function: linear;
 }
@@ -285,6 +298,7 @@ img {
 .project-button:hover {
   background-color: rgb(104, 104, 104);
   box-shadow: 0 0 12px rgb(53, 53, 53);
+  color: rgb(183, 221, 236);
 }
 
 
