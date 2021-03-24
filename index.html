@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="desription" content="Sam Cutler's software development portfolio">
     <title>Sam Cutler - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
@@ -12,20 +15,45 @@
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png?">
     <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x192.png?">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/714ccfffbd.js" crossorigin="anonymous"></script>
   </head>
   <body>
    
     <nav>
-      
-      <div>
-        <h1>SAM CUTLER</h1>
-      </div>
 
-      <div>
-        <p><a href="#">Home</a></p>
-        <p><a href="#about">About</a></p>
-        <p><a href="#projects">Projects</a></p>
-        <p><a href="#contact">Contact</a></p>
+      <div class='nav-container'>
+        <div class='homepage-title'>
+          <a href="#">SAM CUTLER</a>
+        </div>
+
+        <!--
+        <div class='contact-links-container'>
+
+        </div>
+        -->
+
+        
+        <div class='contact-links-container'>
+          <ul class='contact-links-list'>
+            <li>
+              <a href="">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        
       </div>
         
     </nav>
@@ -33,16 +61,57 @@
     <main>
     
       <header>
-        <p>Hi I'm Sam!</p>
-        <p>Etc etc</p>
+        <div class='header-container'>
+          <div class='header-welcome-message'>
+            <h1>Hello! I'm Sam.</h1>
+            <p>I'm a full-stack developer<br>with a PhD in biology.</p>
+          </div>
+        </div>  
       </header>
 
-      <section>
+      <section class='about-section'>
         <h2>ABOUT</h2>
+        <div class='about-container'>
+          <div class='portrait-container'>
+            <img src='images/Sam-on-Pratt-Mt.jpg' alt='Sam on Pratt Mt'>
+          </div>
+          <div class='about-content'>
+            <p>Something about attention to detail, both in outward appearance and underlying code.</p>
+            <p>Maybe quick-learning? Self-discipline? Conceive of and then realize solutions to complex problems.</p>
+            <p>Great skills in <span class='emphasized'>problem-solving</span>, <b>troubleshooting</b>, <b>team collaboration</b>, and <b>communicating complex topics</b>. </p> 
+            <p>Combined with knowledge of Javascript, React, Node.js, and other digital tools, I am equipped to be a uniquely impactful contributor to any software development team.</p>
+            <p>Outside of coding, I love taking advantage of the Pacific Northwest outdoors, in particular rock climbing, backpacking, and skiing.</p>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section class='projects-section'>
         <h2>PROJECTS</h2>
+        <div class='projects-section-container'>
+          <div class='project-container'>
+            <h3>HikeTracker</h3>
+            <div class='project-screenshot-container'>
+              <img class='project-screenshot' src='images/screenshot_hike-tracker.png' alt='hike-tracker-app'>
+            </div>
+            <ul class='project-tech-list emphasized'>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>Mocha / Chai</li>
+              <li>Jest / Enzyme</li>
+              <li>JSON Web Token Authentication</li>
+            </ul>
+            <div class='project-description'>
+              <p>Create a concise record of hiking activity, logging the date, mileage, time, and elevation change of individual hikes, as well as the weather, overall rating, and personal notes.</p>
+            </div>
+            <div class='project-links-container'>
+              <a href='https://hike-tracker.vercel.app/' target='_blank' class='project-button'>View the app</a>
+              <a href='https://github.com/sam1cutler/HikeTracker' target='_blank' class='project-button'>Client code</a>
+              <a href='https://github.com/sam1cutler/HikeTrackerAPI' target='_blank' class='project-button'>Server Code</a>
+            </div>
+          </div>
+        </div>
       </section>
       
     </main>

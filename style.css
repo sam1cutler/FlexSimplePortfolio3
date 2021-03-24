@@ -1,32 +1,301 @@
+* {
+  box-sizing: border-box;
+}
 
+/*--- MAIN BODY STYLES ---*/
 
-/*--- main body styles ---*/
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  /*
+  text-rendering: optimizeSpeed;
+  */
+}
 
+.emphasized {
+  font-weight: 1000;
+}
+
+p {
+  margin: 0;
+}
+
+/*- nav bar -*/
 nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 70px;
+  color: rgb(221, 221, 221);
   background-color: rgb(56, 56, 56);
-  
+  z-index: 5;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgb(41, 41, 41);
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.homepage-title {
+  font-size: 2rem;
+}
+
+.contact-links-container {
+  width: 25%;
   display: flex;
   flex-direction: row;
 }
 
+.contact-links-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.contact-links-list li {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 3%;
+  transition-property: font-size;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+.contact-links-list li:hover {
+  font-size: 2rem;
+}
+
+nav p {
+  font-size: 2rem;
+}
+
+/*- header into -*/
 header {
   position: relative;
+  
+  background-image: url('./images/mt_backdrop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  
+  box-shadow: 0 0 8px rgb(167, 167, 167);
+}
+
+header h1 {
+  margin: 5%;
+  font-size: 3rem;
+}
+
+header p {
+  margin: 5%;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+/*- about me / project sections -*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+section h2 {
+  font-size: 3rem;
+  margin: 0 0 5px 0;
+}
+
+section p {
+  font-size: 1.2rem;
+  margin: 1%;
+}
+
+/*- about me section -*/
+.about-section {
+  background-color: rgb(68, 68, 68);
+  color: rgb(221, 221, 221);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+  padding: 5% 7%;
+}
+
+.portrait-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  margin: 3%;
+}
+
+img {
+  width: 100%;
+  border: solid 1px rgb(68, 68, 68);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(46, 46, 46);
+  
+}
+
+/*- projects section -*/
+.projects-section {
+  padding: 9% 5% 5% 5%;
+  background-color: rgb(221, 221, 221);
+  color: rgb(68, 68, 68);
+}
+
+.projects-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3%;
+  padding: 3%;
+  background-color: rgb(201, 201, 201);
+  border-radius: 6px;
+  box-shadow: 0 0 8px grey;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-screenshot-container {
+  margin: 0 50px 30px 50px;
+  padding: 0 50px;
+}
+
+.project-tech-list {
+  list-style: none;
+  margin: 2%;
+}
+
+.project-tech-list li {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 5px 15px;
+}
+
+.project-description {
+  margin: 2%;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+
+.project-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  width: 25%;
+  font-size: 1.3rem;
+  color: rgb(221, 221, 221);
+  background-color: rgb(56, 56, 56);
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgb(83, 83, 83);
+  transition-property: background-color, box-shadow;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+}
+
+.project-button:hover {
+  background-color: rgb(104, 104, 104);
+  box-shadow: 0 0 12px rgb(53, 53, 53);
+}
+
+
+.projects-section h3 {
+  font-size: 2rem;
+}
+
+
+
+/*- footer section -*/
+footer {
+  color: rgb(221, 221, 221);
+  background-color: rgb(56, 56, 56);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgb(41, 41, 41);
 }
 
 
 /*--- defining pseudo-classes ---*/
+
+body a {
+  text-decoration: none;
+}
+body a:link    { color: rgb(221, 221, 221);}
+body a:visited { color: rgb(221, 221, 221);}
+body a:hover   { color: rgb(221, 221, 221);}
+body a:active  { color: rgb(221, 221, 221);}
+
+/*
 main a { text-decoration: none;}
 main a:link    { color: blue;}
 main a:visited { color: mediumslateblue;}
 main a:hover   { color: cornflowerblue;}
 main a:active  { color: deepskyblue;}
 header nav a:active {color: rgb(184, 183, 183);}
-
+*/
 
 /*-- Desktop formatting --*/
 
