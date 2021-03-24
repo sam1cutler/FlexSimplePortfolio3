@@ -7,7 +7,7 @@
     <title>Sam Cutler - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?">
@@ -23,16 +23,25 @@
 
       <div class='nav-container'>
         <div class='homepage-title'>
+          <!-- <a href="#"><span class='logo-circle'><i class="far fa-circle"></span></i>SAM CUTLER</a> -->
           <a href="#">SAM CUTLER</a>
         </div>
 
-        <!--
-        <div class='contact-links-container'>
-
-        </div>
-        -->
-
         
+        <div class='contact-links-container'>
+          <a href="mailto:sam.cutler@gmail.com" target='_blank' class='nav-contact-link'>
+            <i class="far fa-envelope"></i>
+          </a>
+          <a href="https://github.com/sam1cutler" target='_blank' class='nav-contact-link'>
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/samcutler159/" target='_blank' class='nav-contact-link'>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        
+        
+        <!--
         <div class='contact-links-container'>
           <ul class='contact-links-list'>
             <li>
@@ -52,6 +61,7 @@
             </li>
           </ul>
         </div>
+        -->
         
         
       </div>
@@ -69,23 +79,25 @@
         </div>  
       </header>
 
-      <section class='about-section'>
+      <section class='about-section' id='about'>
         <h2>ABOUT</h2>
         <div class='about-container'>
           <div class='portrait-container'>
             <img src='images/Sam-on-Pratt-Mt.jpg' alt='Sam on Pratt Mt'>
           </div>
           <div class='about-content'>
-            <p>Something about attention to detail, both in outward appearance and underlying code.</p>
-            <p>Maybe quick-learning? Self-discipline? Conceive of and then realize solutions to complex problems.</p>
-            <p>Great skills in <span class='emphasized'>problem-solving</span>, <b>troubleshooting</b>, <b>team collaboration</b>, and <b>communicating complex topics</b>. </p> 
-            <p>Combined with knowledge of Javascript, React, Node.js, and other digital tools, I am equipped to be a uniquely impactful contributor to any software development team.</p>
-            <p>Outside of coding, I love taking advantage of the Pacific Northwest outdoors, in particular rock climbing, backpacking, and skiing.</p>
+            <p>I am a full-stack Javascript developer with experience building beautiful, intuitive, highly functional apps using React, Node.js, Express, and PostgreSQL. 
+              I also have experience in <a href='https://www.genetics.org/content/210/4/1543.long' target='_blank'>biology</a> <a href='https://www.nature.com/articles/nm.3229' target='_blank'>research</a> and education, including teaching at the college level. 
+              With my background, I have great skills in problem-solving, troubleshooting, team collaboration, and communicating technical material to any audience.
+              I am quick to learn and have great attention to detail, and I love to take on complex challenges.
+              In sum, I am well equipped to be a uniquely impactful contributor to any software development team.
+              Outside of coding, I love taking advantage of the Pacific Northwest outdoors, in particular rock climbing, backpacking, and skiing.
+              </p>
           </div>
         </div>
       </section>
 
-      <section class='projects-section'>
+      <section class='projects-section' id='projects'>
         <h2>PROJECTS</h2>
         <div class='projects-section-container'>
           <div class='project-container'>

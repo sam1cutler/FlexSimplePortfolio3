@@ -13,7 +13,7 @@ body {
 }
 
 .emphasized {
-  font-weight: 1000;
+  font-weight: 600;
 }
 
 p {
@@ -48,13 +48,30 @@ nav {
 }
 
 .homepage-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
+}
+
+.logo-circle {
+  font-size: 1.5rem;
+  margin: 0 1rem;
 }
 
 .contact-links-container {
   width: 25%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-contact-link {
+  font-size: 2rem;
+  margin: 5%;
+  transition: font-size 500ms linear;
+}
+
+.nav-contact-link:hover {
+  font-size: 2.4rem;
 }
 
 .contact-links-list {
@@ -81,10 +98,9 @@ nav p {
   font-size: 2rem;
 }
 
-/*- header into -*/
+/*- header intro -*/
 header {
   position: relative;
-  
   background-image: url('./images/mt_backdrop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,7 +113,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20%;
+  padding: 30%;
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -140,6 +156,7 @@ section {
 
 section h2 {
   font-size: 3rem;
+  font-weight: 400;
   margin: 0 0 5px 0;
 }
 
@@ -181,7 +198,19 @@ img {
   border: solid 1px rgb(68, 68, 68);
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(46, 46, 46);
-  
+}
+
+.about-section p {
+  font-weight: 400;
+}
+
+.about-content a {
+  font-weight: 600;
+  transition: color 500ms linear;
+}
+
+.about-content a:hover {
+  color: rgb(109, 188, 219);
 }
 
 /*- projects section -*/
@@ -261,6 +290,10 @@ img {
 
 .projects-section h3 {
   font-size: 2rem;
+}
+
+.project-sections p {
+  font-weight: 400;
 }
 
 
