@@ -44,59 +44,43 @@ nav {
   max-width: 1000px;
 }
 
-.homepage-title {
+.title-container {
   font-size: 2.2rem;
+  margin: 0 auto 0 0;
 }
 
-.logo-circle {
-  font-size: 1.5rem;
-  margin: 0 1rem;
-}
-
-.contact-links-container {
-  width: 25%;
+.nav-links-container {
+  font-size: 2rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  color: red;
+  justify-content: flex-end;
+}
+
+.nav-contact-links-container {
+  margin: 0 0 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-contact-links-container li {
+  display: list-item;
 }
 
 .nav-contact-link {
-  color: red;
-  font-size: 2rem;
-  margin: 5%;
-  
+  display: inline-block;
+  margin: 5px 15px;
+  transition: color 500ms ease-in-out;
 }
 
 .nav-contact-link:hover {
-  font-size: 2.4rem;
-  transition: font-size 500ms ease-out;
+  color: rgb(96, 156, 180);
 }
 
-.contact-links-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
+.burger-wrapper {
+  padding: 0 0 0 55px;
 }
 
-.contact-links-list li {
-  display: inline-block;
-  font-size: 1.8rem;
-  margin: 3%;
-  transition-property: font-size;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-}
-
-.contact-links-list li:hover {
-  font-size: 2rem;
-}
-
-nav p {
-  font-size: 2rem;
-}
 
 /*- header intro -*/
 header {
@@ -127,7 +111,6 @@ header {
   padding: 15%;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
-  
   box-shadow: 0 0 8px rgb(167, 167, 167);
 }
 
@@ -140,9 +123,6 @@ header p {
   margin: 5%;
   font-size: 1.5rem;
 }
-
-
-
 
 
 /*- about me / project sections -*/
@@ -165,6 +145,7 @@ section p {
   margin: 1%;
 }
 
+
 /*- about me section -*/
 .about-section {
   background-color: rgb(68, 68, 68);
@@ -184,7 +165,6 @@ section p {
   align-items: center;
   justify-content: center;
   flex: 3;
-  
 }
 
 .about-content {
@@ -199,7 +179,6 @@ section p {
   border: solid 1px rgb(18, 104, 184);
   border-radius: 80%;
   box-shadow: 0 0 10px rgb(18, 104, 184);
-  
 }
 
 .about-section p {
@@ -229,7 +208,6 @@ section p {
   text-align: center;
   margin: 3%;
   padding: 0 3%;
-  
 }
 
 .project-container {
@@ -296,11 +274,10 @@ section p {
 }
 
 .project-button:hover {
-  background-color: rgb(104, 104, 104);
+  background-color: rgb(90, 90, 90);
   box-shadow: 0 0 12px rgb(53, 53, 53);
-  color: rgb(183, 221, 236);
+  color: rgb(96, 156, 180);
 }
-
 
 .projects-section h3 {
   font-size: 2rem;
@@ -309,7 +286,6 @@ section p {
 .project-sections p {
   font-weight: 400;
 }
-
 
 
 /*- footer section -*/
@@ -324,25 +300,47 @@ footer {
   box-shadow: 0 0 8px rgb(41, 41, 41);
 }
 
+.footer-contacts-list {
+  font-size: 2rem;
+  margin: 20px 0;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-contacts-list li {
+  display: list-item;
+}
+
+.footer-contact-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 25px;
+  transition: color 500ms ease-in-out;
+}
+
+.footer-contact-link:hover {
+  color: rgb(96, 156, 180);
+}
+
+.footer-link-label {
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+
 
 /*--- defining pseudo-classes ---*/
 
-body a {
-  text-decoration: none;
-}
+body a { text-decoration: none;}
 body a:link    { color: rgb(221, 221, 221);}
 body a:visited { color: rgb(221, 221, 221);}
 body a:hover   { color: rgb(221, 221, 221);}
 body a:active  { color: rgb(221, 221, 221);}
 
-/*
-main a { text-decoration: none;}
-main a:link    { color: blue;}
-main a:visited { color: mediumslateblue;}
-main a:hover   { color: cornflowerblue;}
-main a:active  { color: deepskyblue;}
-header nav a:active {color: rgb(184, 183, 183);}
-*/
 
 /*-- Desktop formatting --*/
 
