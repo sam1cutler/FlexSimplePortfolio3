@@ -49,6 +49,10 @@ nav {
   margin: 0 auto 0 0;
 }
 
+.small-caps {
+  font-size: 1.9rem;
+}
+
 .nav-links-container {
   font-size: 2rem;
   display: flex;
@@ -97,7 +101,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30%;
+  padding: 70px 0 0 0;
   height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.3);
@@ -107,8 +111,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 15%;
+  width: 50%;
+  height: 50%;
+  
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   box-shadow: 0 0 8px rgb(167, 167, 167);
@@ -132,6 +139,7 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 5%;
 }
 
 section h2 {
@@ -196,7 +204,6 @@ section p {
 
 /*- projects section -*/
 .projects-section {
-  padding: 9% 5% 5% 5%;
   background-color: rgb(221, 221, 221);
   color: rgb(68, 68, 68);
 }
