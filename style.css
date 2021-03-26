@@ -96,7 +96,6 @@ header {
   background-image: url('./images/mt_backdrop_mobile-crop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: 100vh;
 }
 
