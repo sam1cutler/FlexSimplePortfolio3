@@ -508,11 +508,6 @@ body a:active  { color: rgb(221, 221, 221);}
     padding: 0 70px 0 0;
   }
 
-  .header-welcome-message {
-    width: 50%;
-    height: 50%;
-  }
-
   .about-container {
     padding: 5% 2%;
   }
@@ -592,6 +587,12 @@ body a:active  { color: rgb(221, 221, 221);}
 
   header {
     background-image: url('./images/mt_backdrop.jpg');
+    background-attachment: fixed;
+  }
+
+  .header-welcome-message {
+    width: 50%;
+    height: 50%;
   }
 
   .project-screenshot-container {
